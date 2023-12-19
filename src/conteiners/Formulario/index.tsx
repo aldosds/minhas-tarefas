@@ -6,7 +6,6 @@ import { BotaoSalvar, MainContainer, Titulo } from '../../styles'
 import { Campo } from '../../styles'
 import { Form, Opcao, Opcoes } from './styles'
 import * as enums from '../../utils/enums/Tarefa'
-import Tarefa from '../../models/Tarefa'
 import { cadastrar } from '../../store/reducers/tarefas'
 
 const Formulario = () => {
@@ -17,14 +16,15 @@ const Formulario = () => {
 
   const cadastrarTarefa = (evento: FormEvent) => {
     evento.preventDefault()
-    const tarefaParaAdicionar = new Tarefa(
-      9,
-      titulo,
-      descricao,
-      prioridade,
-      enums.Status.PENDENTE
+
+    dispatch(
+      cadastrar({
+        titulo,
+        prioridade,
+        descricao,
+        status: enums.Status.PENDENTE
+      })
     )
-    dispatch(cadastrar(tarefaParaAdicionar))
   }
 
   return (

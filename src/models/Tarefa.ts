@@ -5,14 +5,14 @@ class Tarefa {
   titulo: string
   descricao: string
   prioridade: enums.Prioridade
-  status: enums.Starus
+  status: enums.Status
 
   constructor(
     id: number,
     titulo: string,
     descricao: string,
     prioridade: enums.Prioridade,
-    status: enums.Starus
+    status: enums.Status
   ) {
     this.id = id
     this.titulo = titulo

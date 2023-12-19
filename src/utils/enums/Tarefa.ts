@@ -4,7 +4,7 @@ export enum Prioridade {
   NORMAL = 'normal'
 }
 
-export enum Starus {
+export enum Status {
   PENDENTE = 'pendente',
   CONCLUIDA = 'concluída'
 }

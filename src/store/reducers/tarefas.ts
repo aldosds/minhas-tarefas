@@ -14,21 +14,21 @@ const initialState: TarefasState = {
       titulo: 'Estudar JavaScript',
       descricao: '',
       prioridade: enums.Prioridade.IMPORTANTE,
-      status: enums.Starus.PENDENTE
+      status: enums.Status.PENDENTE
     },
     {
       id: 2,
       titulo: 'Estudar TypeScript',
       descricao: 'Reveraula 2 do módulo',
       prioridade: enums.Prioridade.NORMAL,
-      status: enums.Starus.CONCLUIDA
+      status: enums.Status.CONCLUIDA
     },
     {
       id: 3,
       titulo: 'Estudar React',
       descricao: 'Praticar o useEffect',
       prioridade: enums.Prioridade.IMPORTANTE,
-      status: enums.Starus.PENDENTE
+      status: enums.Status.PENDENTE
     }
   ]
 }
